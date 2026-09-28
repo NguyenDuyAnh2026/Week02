@@ -1,0 +1,29 @@
+package bai2_3;
+
+public class NumberWrapper {
+    private int value;
+
+    public NumberWrapper(int value){
+        this.value = value;
+    }
+
+    public void setValue(int value){
+        this.value = value;
+    }
+    public int getValue(){
+        return value;
+    }
+    public static void swap(NumberWrapper a, NumberWrapper b){
+        int temp = a.getValue();
+        a.setValue(b.getValue());
+        b.setValue(temp);
+    }
+
+    public static void main(String[] args) {
+       NumberWrapper n1 = new NumberWrapper(5);
+       NumberWrapper n2 = new NumberWrapper(10);
+        System.out.println("Truoc khi swap : " + n1.getValue() + " ," + n2.getValue());
+        swap(n1, n2);
+        System.out.println("Sau khi swap: " + n1.getValue() +", " + n2.getValue());
+    }
+}
