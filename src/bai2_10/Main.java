@@ -1,5 +1,4 @@
-import bai2_10.CentralHub;
-import bai2_10.SmartLight;
+package bai2_10;
 
 public class Main {
     public static void main(String[] args) {
